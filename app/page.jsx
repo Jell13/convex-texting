@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div>
             {todos?.map((todo) => (
-              <Items key={todo.id} text={todo.text}/>
+              <Items key={todo._id} id={todo._id} text={todo.text} deleteButton={handleDelete}/>
             ))}
           </div>
         </div>

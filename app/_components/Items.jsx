@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Items = ({text}) => {
+const Items = ({id, text, deleteButton}) => {
   return (
-    <div>
+    <div className='flex justify-between'>
       {text}
+      <button onClick={() => deleteButton(id)}>Delete</button>
     </div>
   )
 }
